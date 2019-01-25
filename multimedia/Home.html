@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script>
+
+            function del(){
+                var res =confirm("Are you sure delete?");
+                if(res){
+                    alert("sucess");
+                }
+                    else{
+                        alert("sorry")
+                    }
+                }
+                    var res;
+                function fb(){
+                    res= window.open("https://www.facebook.com/","facebook","width=300,height=400")
+                }
+                function clo(){
+                    window.close(res)
+                }
+                console.log(location.href);
+                console.log(location.pathname);
+                console.log(location.protocol);
+                console.log(location.port);
+                
+            </script>
+    </head>
+    <body>
+        <h2>Welcome to Mr:<span id="username"></span></h2>
+        <button onclick="del();">DELETE</button>
+        <button onclick="fb()">FaceBook</button>
+        <button onclick="clo()">close</button>
+    </body>
+</html>

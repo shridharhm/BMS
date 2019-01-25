@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <script>
+        function login() {
+            var name = document.getElementById("user").value;
+            var pass = document.getElementById("pass").value;
+
+            var getname=localStorage.getItem("user");
+            var getpass=localStorage.getItem("pass");
+            if(name==getname && pass==getpass){
+                alert("Login  sucessfully..");
+                window.location="home.html";
+
+            }
+        }
+    </script>
+
+<body>
+    <h2>User Login Page</h2>
+    <div>
+        <h3>UserName:</h3>
+        <input type="text" id="user">
+    </div>
+    <div>
+        <h3>Password:</h3>
+        <input type="text" id="pass">
+    </div>
+    <button onclick="login();">Login</button>
+</body>
+</head>
+
+</html>

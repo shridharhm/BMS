@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <script>
+        function registration() {
+            var name = document.getElementById("user").value;
+            var pass = document.getElementById("pass").value;
+
+            localStorage.setItem("user", name);
+            localStorage.setItem("pass", pass);
+            alert("Registration sucessfully..")
+            window.location="Login.html"
+        }
+    </script>
+<body>
+    <h2>User Registration Page</h2>
+    <div>
+        <h3>UserName:</h3>
+        <input type="text" id="user">
+    </div>
+    <div>
+        <h3>Password:</h3>
+        <input type="text" id="pass">
+    </div>
+    <button onclick="registration();">Register</button>
+</body>
+</head>
+
+</html>

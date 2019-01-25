@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script type="text/javascript" src="js/validate.js"></script>
+        <body>
+            <h3>Registration Page</h3>
+            <form method="post" action="login.jsp"
+             onsubmit="return validate();">
+             <div>
+                 select UserType;
+                 <select id="usertype" onchange="userTypeValidate();">
+                    <option value="0">-select-</option>
+                    <option value="1">Admin</option>
+                    <option value="2">Account</option>
+                 </select>
+             </div>
+                <div>
+                    <label>UserName:</label>
+                    <input type="text" id="user" onblur="validate();">
+                </div>
+                <input type="submit" value="Registration">
+            </form>
+        </body>
+    </head>
+</html>

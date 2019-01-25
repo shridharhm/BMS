@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body bgcolor="pink">
+    <h2>Student Registration Page</h2>
+    <form>
+        <fieldset style="width: 300px">
+            <legend>Personal Informatio</legend>
+        <div><label>UserName <sup>*</sup>:</label>
+        <input type="text"   name="user"  placeholder="Enter User Name">
+        </div>
+        <div>
+            <label>Password <sup>*</sup>:</label>
+            <input type="password" name="pass" placeholder="Password">
+        </div>
+        <div>
+            <label>Select gender</label>
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="FeMale" checked>FeMale
+            <input type="radio" name="gender" value="others" disabled>others
+        </div>
+        </fieldset>
+        <div>
+            <label>Select Languages:</label>
+            <input type="checkbox" name="c1" checked value="Java">Java
+            <input type="checkbox" name="c2" value="Jee">Jee
+            <input type="checkbox" name="c3"  checked value="angular">Angular
+            <input type="checkbox" name="c4" value="css">CSS
+        </div>
+        <div>
+            <label>Select Countries:</label>
+            <select name="countrie">
+                <option value="1">IND</option>
+                <option value="2">PAK</option>
+                <option selected>USA</option>
+                <option>UK</option>
+                <option>AUS</option>
+                <option>ISR</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Address</label>
+            <textarea name="address" rows="10" cols="30"></textarea>
+        </div>
+        <div>
+            <label>Upload Resume:</label>
+            <input type="file" name="resume" multiple 
+            accept="image/*">
+        </div>
+        <div>
+            <label>DOB:</label>
+            <input type="date">
+            <input type="color">
+            <input type="search">
+            <input type="number">
+        </div>
+        <div>
+            <input type="submit" value="Login">
+            <button>Save</button>
+            <input type="reset">
+        </div>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

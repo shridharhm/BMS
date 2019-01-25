@@ -1,0 +1,31 @@
+<script>
+
+function getName(){
+  var name=document.getElementById("user").value;
+if(name==""){
+    alert("plz enter name");
+}else if(name.length<=3)
+{
+    alert("Your max 3 charName:")
+}}
+    
+    function hide(){
+        var p=document.getElementById("user");
+        p.setAttribute('type','password')
+    }
+    function show(){
+        var p=document.getElementById("user");
+        p.setAttribute('type','text')
+    }
+</script>
+<h1>welcome Home Page</h1>
+
+<a href="index.html">Index</a>
+<br>
+password:<input type="password" id="user">
+<button onclick="getName()">Send</button>
+
+<input type="radio" name="r1" onclick="show()">Show
+<input type="radio" name="r1" onclick="hide()">Hide
+
+<iframe src="onlinemusic.html" scrolling="no"></iframe>

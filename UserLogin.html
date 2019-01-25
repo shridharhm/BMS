@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script type="text/javascript" src="js/myscript.js">
+           </script>
+        <body >
+            <h2>Welcome to Login Page</h2>
+            <div style="float:right" id="time"></div>
+           <form>
+            <div>
+                <label>UserName:</label>
+                <input type="text" id="username">
+                <span id="msg"></span>
+            </div>
+            <div>
+                <label>Password:</label>
+                <input type="password" id="pass">
+                <input type="radio" name="r1" onclick="show()">Show
+                <input type="radio" name="r1" onclick="hide()">Hide
+            </div>
+            <div>
+                <input type="button" value="Login" 
+                onclick="validate()">
+            </div>
+        </form>
+        </body>
+    </head>
+</html>
